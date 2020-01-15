@@ -113,7 +113,7 @@ download_code()
 		if [ "${SDK_DIR[i]}" = libllcp ]; then
 			qmake
 			make
-			#make install
+			sudo make install
 		elif [ "${SDK_DIR[i]}" = GNFC ]; then
 			echo "Open QT Creator"
 		else
@@ -121,17 +121,10 @@ download_code()
 		       	autoreconf -vis
 	       		./configure --prefix=/usr
 	 		make
-			#make install		
+			sudo make install		
 		fi
 		cd -
 
-#		if [ $i -lt 4 ]; then
-#			echo "Configuring project"
-#			cd "${PLAT_DIR}/${SDK_DIR[i]}"
-#			autoreconf -vis
-#			./configure --prefix=/usr
-#			make
-#		fi
 
 	done
 
