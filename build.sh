@@ -135,7 +135,7 @@ download_code()
 
 download_code
 
-echo "Hello World!"
+echo "You can now open you project on QT Creator"
 
 
 
